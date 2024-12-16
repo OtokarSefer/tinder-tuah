@@ -7,6 +7,59 @@
     <title>Vite + React</title>
   </head>
   <body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+        <title>Tinder-tuah</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav>
+            <!-- Checkbox for toggling menu -->
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">TinTuah</label>
+            <ul>
+              <li><a class="active" href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Feedback</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Card Section -->
+        <div class="container-2">
+            <div class="card">
+                <img src="img/men/man.jpeg" alt="Avatar">
+                <div class="container">
+                    <h2><b>Alpha male, 15</b></h2>
+                    <p>Black & ready to mingle & maybe single</p>
+                </div>
+            </div>
+            
+            <!-- Buttons -->
+            <div class="buttons">
+                <button><img src="img/icons/no.png" alt="No"></button>
+                <button><img src="img/icons/like.png" alt="Yes"></button>
+            </div>
+        </div>
+    
+        <!-- Javascript -->
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
+
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

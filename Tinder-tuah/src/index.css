@@ -1,68 +1,158 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+/* General Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    font-family: "Audiowide", sans-serif;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+ul {
+    list-style: none;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Navbar */
+nav {
+    background: #ffa9a9;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+label.logo {
+    color: white;
+    font-size: 25px;
+    padding: 55px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background: #9d3232;
+    transition: 0.3s ease;
+}
+
+.checkbtn {
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsive Navbar */
+#check {
+    display: none;
+}
+
+@media (max-width: 890px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #9d3232;
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+/* Card Styling */
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffa9a9;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 450px;
+    border-radius: 8px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 100px;
+    padding: 20px;
+}
+
+.card button {
+    background-color: inherit;
+    border: none;
+    width: 100px;
+
+}
+
+.buttons img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.buttons button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.buttons button:hover {
+    transform: scale(1.1);
 }
