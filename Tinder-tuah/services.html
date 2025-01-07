@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback Tuah</title>
+    <title>Services Tuah</title>
     <!-- Font Awesome and Google Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong" />
@@ -108,54 +108,57 @@
             }
         }
 
-        /* Feedback Form Styling */
+        /* Services Page Layout */
         .container-2 {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
             min-height: 100vh;
-            padding: 20px;
             margin-top: 80px; /* To account for fixed navbar */
+            padding: 20px;
         }
 
-        .card {
+        .service-card {
             background-color: #ffa9a9;
             border: 1px solid #000;
             border-radius: 8px;
-            width: 500px;
+            width: 300px;
             padding: 20px;
+            margin: 15px;
             text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        .card p {
+        .service-card h3 {
             color: #333;
-            font-size: 18px;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: #333;
+            font-size: 16px;
             margin-bottom: 20px;
         }
 
-        form {
-            background: #fff;
-            padding: 20px;
-            width: 100%;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-
-        form textarea {
-            width: 100%;
-            height: 120px;
-            resize: none;
-            border: 1px solid #999;
-            border-radius: 4px;
-            padding: 10px;
+        .service-card i {
+            font-size: 50px;
+            color: #fff;
+            background: #9d3232;
+            padding: 15px;
+            border-radius: 50%;
             margin-bottom: 20px;
-            box-sizing: border-box;
+            transition: background 0.3s ease;
         }
 
-        form button {
+        .service-card i:hover {
+            background: #6a1b1b;
+        }
+
+        .button {
             background: #9d3232;
             color: white;
             padding: 10px 20px;
@@ -163,32 +166,9 @@
             border-radius: 4px;
             cursor: pointer;
             transition: background 0.3s ease;
-            width: 100%;
-            box-sizing: border-box;
         }
 
-        form button:hover {
-            background: #fff;
-        }
-
-        /* Social Icons Section (Optional) */
-        .social-icons {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .social-icons i {
-            font-size: 24px;
-            color: #fff;
-            background: #9d3232;
-            padding: 10px;
-            border-radius: 50%;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .social-icons i:hover {
+        .button:hover {
             background: #6a1b1b;
         }
     </style>
@@ -199,19 +179,43 @@
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li><a class="active" href="#">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a class="active" href="#">Feedback</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
         </ul>
     </nav>
 
     <div class="container-2">
-        <div class="card">
-            <p>You may leave a comment about us, and we may consider reading it!</p>
-            <form method="post" action="#">
-                <textarea name="comment" placeholder="Write here dumbass"></textarea>
-                <button type="submit">Publish Feedback</button>
-            </form>
+        <!-- Service 1 -->
+        <div class="service-card">
+            <i class="fas fa-cogs"></i>
+            <h3>Service One</h3>
+            <p>We offer top-notch maintenance and repair services for all your equipment needs.</p>
+            <button class="button">Learn More</button>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+            <i class="fas fa-briefcase"></i>
+            <h3>Service Two</h3>
+            <p>Our consulting service helps you make the best decisions for your business.</p>
+            <button class="button">Learn More</button>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+            <i class="fas fa-headset"></i>
+            <h3>Service Three</h3>
+            <p>We provide 24/7 customer support to help with any inquiries or issues.</p>
+            <button class="button">Learn More</button>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Service Four</h3>
+            <p>Our marketing team can help grow your brand and reach more customers.</p>
+            <button class="button">Learn More</button>
         </div>
     </div>
 
