@@ -5,14 +5,35 @@ const nameList = [
     "John", "Jane", "Sam", "Emily", "Alex", "Chris", "Katie", "Mark", "Sarah", "Beta", 
     "Gamma", "Sigma", "Alpha", "Lily", "Ethan", "Sophia", "David", "Mia", "Lucas", "Olivia", 
     "Benjamin", "Charlotte", "Amelia", "James", "Aiden", "Isabella", "Henry", "Grace", "Zoe", 
-    "Jack", "Ella"
+    "Jack", "Mia", "Ella", "Zion", "Lana", "Raven", "Johnny", "Riley"
   ];  
 const surnameList = [
-    "Smith", "Johnson", "Williams", "Jones", "Brown", "Davis", "Miller", "Wilson", "Moore", "Taylor",
-    "Anderson", "Thomas", "Jackson", "White", "Harris", "Martin", "Thompson", "Garcia", "Martinez", "Roberts",
-    "Clark", "Rodriguez", "Lewis", "Lee", "Walker", "Hall", "Allen", "Young", "King", "Scott"
+    "Smith", "Johnson", "Williams", "Jones", "Brown", "Taylor", "Thomas", "Jackson", "White", "Harris", "Martin", "Thompson", "Garcia", "Martinez", "Roberts",
+    "Clark", "Rodriguez", "Lewis", "Lee", "Walker", "Hall", "Allen", "Young", "King", "Scott", "Sins", "Rhoades", "Malkova", "Reid"
   ];
   
+const descriptions = [
+    "lobotomized",
+    "Shows agression towards wome",
+    "A frequent member in the kkk",
+    "loves children",
+    "has children",
+    "gay",
+    "lesbian",
+    "i like bdsm",
+    "i work in IT",
+    "im a gamer",
+    "not allowed near dogs or cats",
+    "not allowed near children",
+    "would you like to be a part of my secondary family",
+    "12 inches",
+    "grower, not a shower",
+    "shower, not a grower",
+    "i mildly racist",
+    "0.12 inches is my record...",
+    "im the chapion of the gayeest competitoin: 'football'.",
+    "I loved horses when i was little, now im scared of them"
+]
 
 const list = [
   {  
