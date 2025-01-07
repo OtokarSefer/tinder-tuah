@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Tuah</title>
+</head>
+<style>
+body {
+    margin: 0;
+    font-family: "Audiowide", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+form {
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 500px;
+  border-radius: 5px;
+}
+
+form textarea {
+  width: calc(100% - 22px);
+  height: 100px;
+  resize: none;
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+form button {
+  background: #999;
+  padding: 10px 20px;
+  color: #fff;
+  border: 1px solid #999;
+  border-radius: 4px;
+  transition: 0.1s;
+}
+
+form button:hover {
+  background: #fff;
+  color: #666;
+}
+</style>
+<body>
+    <nav>
+    <label class="logo">Tinder Tuah Contacts</label>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="active" href="#">Feedback</a></li>
+    </ul>
+    </nav>
+<form>
+    <p>You may leave a comment about us and we may think about reading it</p>
+    <br/>
+    <textarea name="comment"></textarea>
+    <br/>
+    <br/>
+    <button>Publish feedback</button>
+    <br/>
+  </form>
+</body>
+</html>

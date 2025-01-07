@@ -1,6 +1,5 @@
-import { useState } from 'react'
-import './App.css'
-import Card from './components/UI/CARD/Card'
+import './App.css';
+import Card from './components/UI/CARD/Card';
 
 const list = [
   {  
@@ -52,14 +51,12 @@ const list = [
       description: 'focused & independent',
       img: "img/men/man.jpeg"
   }
-
-]
+];
 
 function App() {
-
   return (
-    <Card list={list}/>
-  )
+    <Card list={list} />
+  );
 }
 
-export default App
+export default App;

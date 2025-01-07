@@ -1,0 +1,18 @@
+.buttons2 {
+    display: flex;
+    gap: 100px;
+    padding: 20px;
+    background-color: inherit;
+    border: none;
+}
+
+.buttons2:hover {
+    transform: scale(1.1);
+}
+
+.buttons2 img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
