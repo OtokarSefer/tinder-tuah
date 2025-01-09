@@ -30,9 +30,9 @@ nav {
 }
 
 label.logo {
+    padding: 45px;
     color: white;
-    font-size: 25px;
-    padding: 55px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -47,7 +47,7 @@ nav ul li {
 
 nav ul li a {
     color: white;
-    font-size: 17px;
+    font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
@@ -96,63 +96,4 @@ a:hover {
     #check:checked ~ ul {
         left: 0;
     }
-}
-
-/* Card Styling */
-.container-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.card {
-    background-color: #ffa9a9;
-    border: 1px solid #000000;
-    border-radius: 8px;
-    width: 500px;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.card img {
-    object-fit: cover;
-    width: 100%;
-    max-height: 450px;
-    border-radius: 8px;
-}
-
-/* Buttons */
-.buttons {
-    display: flex;
-    gap: 100px;
-    padding: 20px;
-}
-
-.card button {
-    background-color: inherit;
-    border: none;
-    width: 100px;
-
-}
-
-.buttons img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-}
-
-.buttons button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.buttons button:hover {
-    transform: scale(1.1);
 }

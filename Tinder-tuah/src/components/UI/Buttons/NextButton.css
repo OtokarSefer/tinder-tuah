@@ -1,18 +1,14 @@
 .buttons {
-    display: flex;
-    gap: 100px;
-    padding: 20px;
+    display: flex;       /* Align buttons next to each other */
+    gap: 10px;           /* Reduced the gap between the buttons */
     background-color: inherit;
     border: none;
+    justify-content: center; /* Optional: centers buttons horizontally */
 }
 
-.buttons:hover {
-    transform: scale(1.1);
-}
-
+/* Styling for each image inside buttons */
 .buttons img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
 }
-
